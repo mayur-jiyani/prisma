@@ -4,7 +4,7 @@ const prisma = new PrismaClient();
 export const CreateUser = async () => {
   let user: Prisma.UserCreateInput;
   try {
-    const channel = { name: "ritul", email: "ritul@ashish.com" };
+    const channel = { name: "lilikjk", email: "jhjhj@ashish.com" };
 
     const res = await prisma.user.create({
       data: channel,
@@ -52,7 +52,7 @@ export const FindUser = async () => {
         name: "chirag",
       },
     });
-    console.log("user found: ",res);
+    console.log("user found: ", res);
   } catch (err) {
     console.log(err);
   } finally {
@@ -71,11 +71,11 @@ export const CountUser = async () => {
       where: {
         name: "chirag",
       },
-      _count:{
-        name: true
-      }
+      _count: {
+        name: true,
+      },
     });
-    console.log("Number of user found: ",res._count.name);
+    console.log("Number of user found: ", res._count.name);
   } catch (err) {
     console.log(err);
   } finally {
@@ -85,18 +85,17 @@ export const CountUser = async () => {
   }
 };
 
-export const  DeleteUser = async () => {
+export const DeleteUser = async () => {
   let user: Prisma.UserCreateInput;
 
   try {
-
     const res = await prisma.user.delete({
       where: {
         id: 8,
       },
     });
 
-    console.log("user deleted ",res);
+    console.log("user deleted ", res);
   } catch (err) {
     console.log(err);
   } finally {
@@ -105,9 +104,3 @@ export const  DeleteUser = async () => {
     };
   }
 };
-
-// export const FindUser = async () => {
-//   const userRepo = getRepository(User);
-//   const users = await userRepo.find({ relations: ["posts"] });
-//   console.log("New user found ", users[0]);
-// };

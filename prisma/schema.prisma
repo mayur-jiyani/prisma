@@ -20,10 +20,11 @@ model Post {
 }
 
 model Profile {
-  id     Int     @id @default(autoincrement())
-  bio    String?
-  user   User    @relation(fields: [userId], references: [id])
-  userId Int     @unique
+  id       Int        @id @default(autoincrement())
+  bio      String?
+  user     User       @relation(fields: [userId], references: [id])
+  userId   Int        @unique
+  Location Location[]
 }
 
 model User {
@@ -34,3 +35,11 @@ model User {
   profile Profile?
 }
 
+model Location {
+  id        Int      @id @default(autoincrement())
+  city      String
+  pincode   Int
+  country   String
+  profile   Profile? @relation(fields: [profileId], references: [id])
+  profileId Int      @unique
+}
