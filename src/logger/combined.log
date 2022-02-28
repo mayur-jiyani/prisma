@@ -1,0 +1,12 @@
+2022-02-28T12:06:09.883Z info: 	Time for exection of function FindUser, number of iteration performed 1000, Time Taken to execute 4.715542763999999 seconds
+2022-02-28T12:07:16.737Z info: 	Time for exection of function CountUser, number of iteration performed 1000, Time Taken to execute 5.296917842 seconds
+2022-02-28T12:09:22.504Z info: 	Time for exection of function SumOfAllPost, number of iteration performed 1000, Time Taken to execute 4.9001020969999995 seconds
+2022-02-28T12:12:35.062Z info: 	Time for exection of function UserByLocation, number of iteration performed 1000, Time Taken to execute 9.716692300999998 seconds
+2022-02-28T12:20:28.994Z info: 	Time for exection of function SumOfAllLikesByGroup, number of iteration performed 1000, Time Taken to execute 5.471922419 seconds
+2022-02-28T12:37:50.912Z info: 	Time for exection of function CountPostByUser, number of iteration performed 1000, Time Taken to execute 10.319854789 seconds
+2022-02-28T12:46:08.139Z info: 	Time for exection of function HavingInUser, number of iteration performed 1000, Time Taken to execute 4.995880432999999 seconds
+2022-02-28T12:47:18.730Z info: 	Time for exection of function AllPostWithLikesLessThen, number of iteration performed 1000, Time Taken to execute 7.911789697000001 seconds
+2022-02-28T12:50:18.229Z info: 	Time for exection of function CreatePost, number of iteration performed 1000, Time Taken to execute 12.596488550999998 seconds
+2022-02-28T12:51:44.205Z info: 	Time for exection of function RetrieveJsonObject, number of iteration performed 1000, Time Taken to execute 9.712682165 seconds
+2022-02-28T12:52:36.740Z info: 	Time for exection of function FindPostBetweenDate, number of iteration performed 1000, Time Taken to execute 8.952518143999999 seconds
+2022-02-28T12:56:09.411Z info: 	Time for exection of function FindUserGroupByLocation, number of iteration performed 1000, Time Taken to execute 6.005642171 seconds

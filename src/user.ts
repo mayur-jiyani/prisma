@@ -4,7 +4,7 @@ const prisma = new PrismaClient();
 export const CreateUser = async () => {
   let user: Prisma.UserCreateInput;
   try {
-    const channel = { name: "lilikjk", email: "jhjhj@ashish.com" };
+    const channel = { name: "lilikjk", email: "plpl@ashish.com" };
 
     const res = await prisma.user.create({
       data: channel,
@@ -49,7 +49,7 @@ export const FindUser = async () => {
   try {
     const res = await prisma.user.findMany({
       where: {
-        name: "chirag",
+        name: "Alpha",
       },
     });
     console.log("user found: ", res);
@@ -69,7 +69,7 @@ export const CountUser = async () => {
     // var name:string
     const res = await prisma.user.aggregate({
       where: {
-        name: "chirag",
+        name: "Alpha",
       },
       _count: {
         name: true,
@@ -91,7 +91,7 @@ export const DeleteUser = async () => {
   try {
     const res = await prisma.user.delete({
       where: {
-        id: 8,
+        email: "plpl@ashish.com",
       },
     });
 
@@ -104,3 +104,72 @@ export const DeleteUser = async () => {
     };
   }
 };
+
+export const CountPostByUser = async () => {
+  // let post: Prisma.PostCreateInput;
+  try {
+    const userData = await prisma.user.findMany({});
+
+    const data = userData.map(async (d: any) => {
+      // var authorId= d.id
+
+      const res = await prisma.post.groupBy({
+        by: ["authorId"],
+        _count: {
+          id: true,
+        },
+        where: {
+          authorId: d.id,
+        },
+      });
+
+      console.log(res);
+
+      // console.log(
+      //   "Count post by user: ",
+      //   "total post: ",
+      //   res[0]._count.id,
+      //   " user id: ",
+      //   d.id
+      // );
+    });
+
+    data;
+
+    // console.log("post with group by with sum of likes ", res);
+  } catch (err) {
+    console.log(err);
+  } finally {
+    async () => {
+      await prisma.$disconnect();
+    };
+  }
+};
+
+export const HavingInUser = async () => {
+  let user: Prisma.UserCreateInput;
+
+  try {
+    const res = await prisma.user.findMany({
+      where: {
+        AND:[
+          {name:"Alpha"},
+          {email: "devam@gmail.com"}
+        ]
+        // name:"devam",
+        // email: "devan@ashish.com",
+      },
+    });
+    console.log("user found: ", res);
+  } catch (err) {
+    console.log(err);
+  } finally {
+    async () => {
+      await prisma.$disconnect();
+    };
+  }
+};
+
+
+
+
