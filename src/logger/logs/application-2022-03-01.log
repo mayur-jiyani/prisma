@@ -1,0 +1,4 @@
+2022-03-01T06:00:29.787Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:100, Time Taken to execute 5.386007252 seconds
+2022-03-01T06:00:55.709Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:1000, Time Taken to execute 5.395268302000001 seconds
+2022-03-01T06:01:41.168Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:10, Time Taken to execute 5.317754007 seconds
+2022-03-01T06:02:22.209Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:1, Time Taken to execute 5.2635318589999995 seconds

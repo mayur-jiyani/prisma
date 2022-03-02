@@ -112,13 +112,14 @@ const main = async () => {
 
   const start = window.performance.now()
 
-  const functionName = 'FindUserGroupByLocation';
+  const functionName = 'FindUser';
   const numberOfIteration = 1000;
+  const connections = 1;
  
 
   for (let index = 0; index < numberOfIteration; index++) {
       
-    await FindUserGroupByLocation().catch((err: Error) => {
+    await FindUser().catch((err: Error) => {
       console.log("Error: ", err);
     });
       
@@ -128,7 +129,7 @@ const main = async () => {
   const executionTime = (stop - start)/1000;
 
   console.log(`Time Taken to execute = ${(stop - start)/1000} seconds`);
-  logger.info(`Time for exection of function ${functionName}, number of iteration performed ${numberOfIteration}, Time Taken to execute ${executionTime} seconds`)
+  logger.info(`Time for exection of function ${functionName}, number of iteration performed ${numberOfIteration},connections:${connections}, Time Taken to execute ${executionTime} seconds`)
 };
 
 main();

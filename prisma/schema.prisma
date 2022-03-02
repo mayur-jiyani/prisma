@@ -1,5 +1,5 @@
 datasource db {
-  url      = "mysql://user:newPass@321@192.168.1.175:3306/orm_demo"
+  url      = "mysql://user:newPass@321@192.168.1.175:3306/orm_demo?connection_limit=1"
   provider = "mysql"
 }
 

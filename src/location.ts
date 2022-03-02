@@ -11,6 +11,7 @@ export const CreateLocation = async () => {
       profileId: 7,
     };
 
+    
     const res = await prisma.location.create({
       data: channel,
     });
@@ -79,3 +80,4 @@ export const FindUserGroupByLocation = async () => {
     };
   }
 };
+

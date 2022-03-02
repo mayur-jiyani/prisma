@@ -10,3 +10,11 @@
 2022-02-28T12:51:44.205Z info: 	Time for exection of function RetrieveJsonObject, number of iteration performed 1000, Time Taken to execute 9.712682165 seconds
 2022-02-28T12:52:36.740Z info: 	Time for exection of function FindPostBetweenDate, number of iteration performed 1000, Time Taken to execute 8.952518143999999 seconds
 2022-02-28T12:56:09.411Z info: 	Time for exection of function FindUserGroupByLocation, number of iteration performed 1000, Time Taken to execute 6.005642171 seconds
+2022-03-01T05:53:18.807Z info: 	Time for exection of function FindUser, number of iteration performed 1000, Time Taken to execute 6.754887796999999 seconds
+2022-03-01T05:54:43.654Z info: 	Time for exection of function CountUser, number of iteration performed 1000, Time Taken to execute 6.137924429999999 seconds
+2022-03-01T05:58:55.029Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:100, Time Taken to execute 5.3802007640000005 seconds
+2022-03-01T05:59:40.829Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:100, Time Taken to execute 5.318267586 seconds
+2022-03-01T06:00:29.787Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:100, Time Taken to execute 5.386007252 seconds
+2022-03-01T06:00:55.709Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:1000, Time Taken to execute 5.395268302000001 seconds
+2022-03-01T06:01:41.168Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:10, Time Taken to execute 5.317754007 seconds
+2022-03-01T06:02:22.209Z info: 	Time for exection of function FindUser, number of iteration performed 1000,connections:1, Time Taken to execute 5.2635318589999995 seconds

@@ -111,7 +111,6 @@ export const CountPostByUser = async () => {
     const userData = await prisma.user.findMany({});
 
     const data = userData.map(async (d: any) => {
-      // var authorId= d.id
 
       const res = await prisma.post.groupBy({
         by: ["authorId"],
